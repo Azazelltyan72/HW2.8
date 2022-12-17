@@ -1,3 +1,5 @@
+package task1;
+
 public class Car extends MotorTransport implements Competing {
     private String color;
     private final String bodyType;
@@ -20,7 +22,7 @@ public class Car extends MotorTransport implements Competing {
 
     @Override
     public void repair() {
-        System.out.println("Автомобиль " + getBrand() + getBrand() + " починена");
+        System.out.println("Автомобиль " + getBrand() + getModel() + " починена");
     }
 
     public Car(String brand, String model, double engineCapacity, String color, String bodyType, String transmission) {
@@ -60,7 +62,7 @@ public class Car extends MotorTransport implements Competing {
 
     @Override
     public String toString() {
-        return "Car{" +
+        return "task1.Car{" +
                 "brand ='" + getBrand() + '\'' +
                 ", model ='" + getModel() + '\'' +
                 ", color ='" + color + '\'' +

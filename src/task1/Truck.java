@@ -1,9 +1,12 @@
-public class Truck extends MotorTransport implements Competing{
+package task1;
+
+public class Truck extends MotorTransport implements Competing {
     public Truck(String brand, String model, double engineCapacity) {
         super(brand, model, engineCapacity);
     }
+
     public void repair() {
-        System.out.println("Грузовик " + getBrand() + getBrand() + " починен");
+        System.out.println("Грузовик " + getBrand() + " " + getModel() + " починен");
     }
 
     @Override
@@ -20,6 +23,7 @@ public class Truck extends MotorTransport implements Competing{
     public void finishMoving() {
         System.out.println("Грузовик заканчивает движение.");
     }
+
     @Override
     public String toString() {
         return "Truk{" +
@@ -31,16 +35,16 @@ public class Truck extends MotorTransport implements Competing{
 
     @Override
     public void pitStop() {
-        System.out.println(("Грузовик " + this.getBrand() + " " +  this.getModel() + " делает пит-стоп (техническую оставку)."));
+        System.out.println(("Грузовик " + this.getBrand() + " " + this.getModel() + " делает пит-стоп (техническую оставку)."));
     }
 
     @Override
     public void maxSpeed() {
-        System.out.println(("Грузовик " + this.getBrand() + " " +  this.getModel() + " достигает максимальной скорости."));
+        System.out.println(("Грузовик " + this.getBrand() + " " + this.getModel() + " достигает максимальной скорости."));
     }
 
     @Override
     public void bestTime() {
-        System.out.println(("У грузовика " + this.getBrand() + " " +  this.getModel() + " лучшее время."));
+        System.out.println(("У грузовика " + this.getBrand() + " " + this.getModel() + " лучшее время."));
     }
 }

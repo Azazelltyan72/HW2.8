@@ -1,3 +1,5 @@
+package task1;
+
 public class Driver<M extends MotorTransport & Competing> {
     private String fullName;
     public boolean presenceOfDriverLicense;

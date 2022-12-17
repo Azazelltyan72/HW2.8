@@ -1,3 +1,5 @@
+package task1;
+
 public class Sponsor {
     private final String name;
     private final int amount;

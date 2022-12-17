@@ -1,7 +1,9 @@
+package task1;
+
 public class Bus extends MotorTransport implements Competing {
     private String color;
     public void repair() {
-        System.out.println("Автобус " + getBrand() + getBrand() + " починен");
+        System.out.println("Автобус " + getBrand() + getModel() + " починен");
     }
     @Override
     public void startMoving() {
@@ -38,7 +40,7 @@ public class Bus extends MotorTransport implements Competing {
 
     @Override
     public String toString() {
-        return "Bus{" +
+        return "task1.Bus{" +
                 "brand ='" + getBrand() + '\'' +
                 ", model ='" + getModel() + '\'' +
                 ", color ='" + color + '\'' +

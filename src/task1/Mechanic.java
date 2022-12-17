@@ -1,3 +1,5 @@
+package task1;
+
 public class Mechanic<M extends MotorTransport> {
     private final String name;
     private final String surname;

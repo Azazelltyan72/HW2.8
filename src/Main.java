@@ -1,3 +1,5 @@
+import task1.*;
+
 import java.util.List;
 
 public class Main {
@@ -16,9 +18,9 @@ public class Main {
         CategoryBDriver nana = new CategoryBDriver("Нана Кобаяси Л.", true, 12, lada);
 //        System.out.println(azazel);
 //        azazel.stop();
-//        CategoryCDriver max = new CategoryCDriver("АМТ", true, 10, gazel4);
+//        task1.CategoryCDriver max = new task1.CategoryCDriver("АМТ", true, 10, gazel4);
 //        System.out.println(max);
-//        CategoryDDriver dinislam = new CategoryDDriver("ГДА", true, 20, neman);
+//        task1.CategoryDDriver dinislam = new task1.CategoryDDriver("ГДА", true, 20, neman);
 //        System.out.println(dinislam);
 //        System.out.println();
 
@@ -46,6 +48,13 @@ public class Main {
         neman.addSponsors(intel, marlboro, honda);
 //        service(lada, neman, gazel4);
         List<MotorTransport> motorTransports = List.of(lada, neman, gazel4);
+
+        ServiceStation serviceStation = new ServiceStation();
+        serviceStation.addCar(lada);
+        serviceStation.addTruck(gazel4);
+        serviceStation.service();
+        serviceStation.service();
+
         printInfoDriver(lada);
 
     }

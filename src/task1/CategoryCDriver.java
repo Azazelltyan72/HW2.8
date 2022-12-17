@@ -1,5 +1,8 @@
-public class CategoryBDriver extends Driver<Car> {
-    public CategoryBDriver(String fullName, boolean presenceOfDriverLicense, int experience, Car motorTransport) {
+package task1;
+
+public class CategoryCDriver extends Driver<Truck> {
+
+    public CategoryCDriver(String fullName, boolean presenceOfDriverLicense, int experience, Truck motorTransport) {
         super(fullName, presenceOfDriverLicense, experience, motorTransport);
     }
 
@@ -7,7 +10,7 @@ public class CategoryBDriver extends Driver<Car> {
     public String toString() {
         return "Водитель " +
                 getFullName() +
-                " управляет автомобилем " + getMotorTransport().getBrand() +
+                " управляет грузовиком " + getMotorTransport().getBrand() +
                 " " + getMotorTransport().getModel() +
                 " и будет участвовать в заезде.";
     }
